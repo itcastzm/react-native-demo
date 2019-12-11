@@ -25,6 +25,10 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
+import ToastExample from "./src/ToastExample";
+
+
+
 function print(obj, deco) {
   let str = '';
   for(let p in obj) {
@@ -36,7 +40,7 @@ function print(obj, deco) {
 
 const App = () => {
    
-   
+  ToastExample.show("Awesome", ToastExample.SHORT);
 
   return (
     <Fragment>
